@@ -1,0 +1,33 @@
+*Features:
+   -In the settings tab you change anything if you respect the limits and change the desired  value between the "..."
+
+   -You can add more zones, by changing the value of "nrZones" in "Globals.h" file and adding
+ into the settings file the pattern for one more zone.
+
+   -You are going to receive a notification 10 before a booking expires with the possibility of  extending.
+
+   -You are going to receive a notification when a booking expires.
+
+   -If we register all these times, to only one zone:
+ Previously booked: 1. 11:00 - 13:01
+                   2. 12:00 - 14:00
+                   3. 11:00 - 12:00
+                   4. 13:02 - 14:00
+   And if curent book is "12:00 - 14:00" the above books should occupy only 2 spaces.
+
+  -If we register all these times, to only one zone:
+	1: Start: 12:00     Id == (ZoneID-1)
+   	   End: 14:00
+	2: Start: 12:00     Id ==  (ZoneID-2)
+           End: 13:00
+	3: Start: 13:00     Id ==  (ZoneID-3)
+	   End: 14:00
+	4: Start: 13:01     Id ==  (ZoneID-2)
+   	   End: 13:31
+
+*Restrictions:
+   -Operating system: Windows
+   -The minium booking time is 15 minutes.
+   -The maxium time for one booking it's 24H(It can be extend for another 15min to 24hours, if  available).
+   -If a car is leaving at 12:00 and a car is coming at 12:00 and there's only one space left,
+ it's considered impossible.

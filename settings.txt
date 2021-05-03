@@ -1,0 +1,18 @@
+ZoneA name: "ZoneA"
+ZoneA capacity: "5" (int)
+ZoneA price $/hour: "17" (int)
+
+ZoneB name: "ZoneB"
+ZoneB capacity: "7" (int)
+ZoneB price $/hour: "15" (int)
+
+ZoneC name: "ZoneC"
+ZoneC capacity: "8" (int)
+ZoneC price $/hour: "13" (int)
+
+Rush hour difference: "8" (int)
+Normal hour difference: "5" (int)
+Off hour difference: "3"  (int)
+
+Time speed: "700"
+Animation speed: "45"
